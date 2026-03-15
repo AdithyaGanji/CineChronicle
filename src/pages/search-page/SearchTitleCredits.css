@@ -1,0 +1,13 @@
+.st-credits-container {
+  font-size: 1.6rem;
+  padding-block: 1.5rem;
+  padding-left: .5rem;
+}
+
+.st-credits-key {
+  margin-right: 1rem;
+}
+
+.st-credits-value {
+  color: var(--gray);
+}

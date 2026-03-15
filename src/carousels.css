@@ -1,0 +1,60 @@
+@media (max-width: 1400px) {
+  .carousel {
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+  }
+
+  .carousel .media-card {
+    scroll-snap-align: start;
+  }
+
+  .new-arrivals-media {
+    anchor-name: --new-arrivals-carousel;
+  }
+
+  .movies-media {
+    anchor-name: --movies-carousel;
+  }
+
+  .series-media {
+    anchor-name: --series-carousel;
+  }
+
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+
+  .carousel::scroll-button(left), .carousel::scroll-button(right) {
+    content: '❰';
+    font-size: 5rem;
+    background-color: transparent;
+    color: var(--white);
+    border: none;
+    position: fixed;
+    position-area: left center;
+    translate: -25%;
+  }
+
+  .carousel::scroll-button(right) {
+    content: '❱';
+    position-area: right center;
+    translate: 25%;
+  }
+
+  .carousel::scroll-button(left):disabled, .carousel::scroll-button(right):disabled {
+    opacity: 0.1;
+  }
+
+  .new-arrivals-media::scroll-button(left), .new-arrivals-media::scroll-button(right) {
+    position-anchor: --new-arrivals-carousel;
+  }
+
+  .movies-media::scroll-button(left), .movies-media::scroll-button(right) {
+    position-anchor: --movies-carousel;
+  }
+
+  .series-media::scroll-button(left), .series-media::scroll-button(right) {
+    position-anchor: --series-carousel;
+  }
+}

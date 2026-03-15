@@ -1,0 +1,165 @@
+.fallback-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2rem;
+}
+
+.refine-search-message {
+  font-size: 3rem;
+  font-weight: 450;
+}
+
+.search-result-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-title-container {
+  max-width: 65%;
+  margin-inline: auto;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  column-gap: 4rem;
+  padding: 2.75rem 2.25rem;
+  border-radius: 10px;
+}
+
+.title-poster {
+  width: 28.5rem;
+  height: auto;
+  aspect-ratio: 2 / 3;
+  box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.3);
+}
+
+.st-name-and-type {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-title-name {
+  font-size: 3rem;
+  font-weight: 550;
+}
+
+.search-title-type {
+  color: var(--gray);
+  font-size: 1.575rem;
+  font-weight: 425;
+  text-transform: uppercase;
+  margin-top: .3rem;
+}
+
+.st-plot {
+  width: 90%;
+  font-size: 1.6rem;
+  color: var(--gray);
+  margin-bottom: 2rem;
+}
+
+.st-rating-wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: .5rem;
+  margin-bottom: 1.5rem;
+}
+
+.st-rating-icon {
+  position: relative;
+  bottom: .05rem;
+}
+
+.st-rating-container {
+  font-size: 1.85rem;
+  font-weight: 600;
+  color: var(--gray);
+}
+
+.st-rating {
+  color: var(--white);
+  font-size: 2rem;
+  font-weight: 650;
+  letter-spacing: initial;
+}
+
+.st-rating-threshold {
+  letter-spacing: .15rem;
+}
+
+.loading-animation {
+  width: 65px;
+}
+
+/* Media Queries */
+@media (max-width: 1450px) {
+  .search-title-container {
+    max-width: 70%;
+  }
+}
+
+@media (max-width: 1250px) {
+  .title-poster {
+    width: 26.5rem;
+    height: auto;
+    aspect-ratio: 2 / 3;
+  }
+}
+
+@media (max-width: 1000px) {
+  .search-title-container {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2.5rem;
+    margin-bottom: 5rem;
+  }
+
+  .title-poster {
+    width: 22.5rem;
+    height: auto;
+    aspect-ratio: 2 / 3;
+  }
+  
+  .st-plot {
+    width: 100%;
+    margin-bottom: 2.5rem;
+  }
+
+  .search-title-type {
+    margin-top: .25rem;
+  }
+
+  .search-result-container {
+    height: auto;
+    margin-top: 12.5rem;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 800px) {
+  .search-result-container {
+    margin-top: 8rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .search-title-container {
+    max-width: 90%;
+  }
+
+  .title-poster {
+    width: 20.5rem;
+    height: auto;
+    aspect-ratio: 2 / 3;
+  }
+}
+
+@media (max-width: 400px) {
+  .search-title-container {
+    max-width: 97.5%;
+  }
+}

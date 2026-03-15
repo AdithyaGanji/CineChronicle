@@ -1,0 +1,27 @@
+.search-title-attributes {
+  width: 100%;
+  display: grid;
+  grid-template-columns: max-content max-content;
+  align-items: center;
+  gap: 1.75rem;
+  margin: 2rem 0 2.5rem;
+}
+
+.st-attribute-container {
+  display: flex;
+  align-items: center;
+  column-gap: .55rem;
+}
+
+.st-attribute {
+  width: fit-content;
+  color: rgb(213, 213, 213);
+  font-size: 1.65rem;
+  font-weight: 400;
+}
+
+@media (max-width: 1000px) {
+  .search-title-attributes {
+    margin: 2.15rem 0 2.65rem;
+  }
+}

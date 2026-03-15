@@ -1,0 +1,142 @@
+.overlay {
+  display: none;
+  justify-content: center;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.enable-overlay {
+  display: flex;
+  z-index: 99;
+}
+
+.search-wrapper {
+  margin-top: 35vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-bar-wrapper {
+  height: fit-content;
+  background-color: rgb(45, 45, 45);
+  border: 1px solid rgb(50, 50, 50);
+  border-radius: 65px;
+  display: flex;
+  align-items: center;
+  padding-block: .9rem;
+  padding-left: 2.75rem;
+  padding-right: 1rem;
+  box-shadow: 0 0 25px 0px rgb(27, 27, 27)
+}
+
+.search-bar {
+  width: 32.5rem;
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--white);
+  background-color: transparent;
+  margin-right: 1rem;
+  border: none;
+  outline: none;
+}
+
+.search-bar::placeholder {
+  color: var(--white);
+}
+
+.search-bar-wrapper .search-icon-wrapper {
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+}
+
+.search-bar-wrapper .search-icon-wrapper.enable-search {
+  opacity: 1;
+  pointer-events: initial;
+}
+
+.search-bar-wrapper .hover-on-bg {
+  padding: .5rem;
+}
+
+.search-bar-wrapper .search-icon {
+  width: 27.5px;
+  height: 27.5px;
+}
+
+.close-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.media-type-input-container {
+  margin-top: 1.25rem;
+}
+
+.mt-input-wrapper {
+  width: fit-content;
+  display: flex;
+  background-color: #121212;
+  border: 1px solid rgb(45, 45, 45);
+  border-radius: 100px;
+  position: relative;
+}
+
+.mt-input-btn {
+  width: 50%;
+  font-size: 1.75rem;
+  color: var(--white);
+  background-color: transparent;
+  padding: 1.35rem 2.25rem;
+  border: none;
+  border-radius: 100px;
+  transition: color 0.35s ease;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.bg-on-btn {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: var(--white);
+  border: none;
+  border-radius: 100px;
+  left: 0;
+  transition: left 0.35s ease;
+}
+
+.slide-right {
+  left: 50%;
+}
+
+.mt-input-btn:not(.active) {
+  transition: color 0.35s ease;
+}
+
+.mt-input-btn:not(.active):hover {
+  color: rgb(222, 222, 222);
+}
+
+.active {
+  color: var(--black);
+  pointer-events: none;
+}
+
+/* Media Queries */
+@media (max-width: 500px) {
+  .search-bar {
+    width: 30rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .search-bar {
+    width: 22.5rem;
+  }
+}
