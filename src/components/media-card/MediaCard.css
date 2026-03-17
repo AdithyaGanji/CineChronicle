@@ -82,3 +82,13 @@
     transform: translateY(-.65rem);
   }
 }
+
+@media (max-width: 800px) {
+  .media-card {
+    flex: 0 0 24rem;
+  }
+  
+  .media-attributes {
+    margin: 2rem auto;
+  }
+}

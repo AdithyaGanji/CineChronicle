@@ -11,6 +11,11 @@
   margin-bottom: 2.25rem;
 }
 
+.section {
+  padding-inline: 5rem;
+  margin-bottom: 10rem;
+}
+
 .btn {
   font-size: 1.5rem;
   font-weight: 500;
@@ -49,6 +54,12 @@
 @media (max-width: 1400px) {
   .media-cards-grid {
     justify-content: initial;
+  }
+}
+
+@media (max-width: 1000px) {
+  .section {
+    margin-bottom: 6.5rem;
   }
 }
 

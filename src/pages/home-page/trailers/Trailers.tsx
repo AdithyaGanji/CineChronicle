@@ -7,7 +7,7 @@ export default function Trailers() {
   const [activeTrailerLink, setActiveTrailerLink] = useState('https://www.youtube.com/embed/8yh9BPUBbbQ?si=EpuS6VFG1fsoeIAI')
 
   return (
-    <section id="trailers" className="container trailers">
+    <section id="trailers" className="container section trailers">
       <h2 className="trailers-header section-header">Trailers</h2>
 
       <div className="trailers-wrapper">
