@@ -7,10 +7,14 @@ export default function Trailers() {
   const [activeTrailerLink, setActiveTrailerLink] = useState('https://www.youtube.com/embed/8yh9BPUBbbQ?si=EpuS6VFG1fsoeIAI')
 
   return (
-    <section id="trailers" className="container section trailers">
-      <h2 className="trailers-header section-header">Trailers</h2>
+    <section id="trailers" className="section trailers">
+      <div className="section-header-wrapper">
+        <div className="horizontal-ruler"></div>
+        <h2 className="trailers-header section-header">Trailers</h2>
+        <div className="horizontal-ruler"></div>
+      </div>
 
-      <div className="trailers-wrapper">
+      <div className="container trailers-wrapper">
         <iframe className="main-trailer" width="850" height="485" src={activeTrailerLink} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
 
         <div className="other-trailers">

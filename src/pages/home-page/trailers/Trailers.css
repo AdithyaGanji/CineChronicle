@@ -38,10 +38,6 @@
   cursor: pointer;
 }
 
-.other-trailer-wrapper:hover {
-  transform: translateY(-.5rem);
-}
-
 .other-trailer {
   width: 17.5rem;
   height: 10.5rem;
@@ -56,6 +52,12 @@
 }
 
 /* Media Queries */
+@media (min-width: 769px) {
+  .other-trailer-wrapper:hover {
+    transform: translateY(-.5rem);
+  }
+}
+
 @media (max-width: 1000px) {
   .main-trailer {
     width: 90%;
@@ -68,7 +70,7 @@
   .other-trailers {
     width: 85%;
     flex-wrap: wrap;
-    row-gap: 2rem;
+    gap: 1.75rem;
   }  
 }
 
