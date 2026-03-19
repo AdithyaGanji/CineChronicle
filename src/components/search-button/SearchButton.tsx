@@ -51,13 +51,13 @@ export default function SearchButton() {
               type="text"
               placeholder="Search"
               value={searchInput}
-              onChange={(event) => setSearchInput(event.target.value.trim())}
+              onChange={(event) => setSearchInput(event.target.value)}
               autoFocus
               onKeyUp={(event) => handleKeyPress(event)}
               ref={inputRef}
             />
             <div
-              className={`search-icon-wrapper hover-on-bg ${searchInput.length > 0 ? 'enable-search' : ''}`}
+              className={`search-icon-wrapper hover-on-bg ${searchInput.trim().length > 0 ? 'enable-search' : ''}`}
               onClick={() => handleSearchClick()}
             >
               <img
