@@ -22,7 +22,7 @@ export default function Navbar() {
   const location = useLocation()
 
   return (
-    <nav className={`navbar ${location.pathname === '/search' ? 'not-fixed' : ''} ${isScrolled ? 'scrolled' : ''}`}>
+    <nav className={`navbar ${location.pathname === '/search' ? 'search-page not-fixed' : ''} ${isScrolled ? 'scrolled' : ''}`}>
       <Link 
         className="cinechronicle-logo" to="/"
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}

@@ -92,6 +92,14 @@
 
   .navbar {
     top: 1rem;
+  }
+
+  .search-page.navbar {
+    top: .75rem;
+  }
+
+  .scrolled {
+    top: .75rem;
     padding-block: 1.5rem;
   }
 

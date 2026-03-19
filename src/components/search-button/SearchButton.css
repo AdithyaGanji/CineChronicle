@@ -22,7 +22,7 @@
 
 .search-bar-wrapper {
   height: fit-content;
-  background-color: rgba(36, 36, 36, 0.975);
+  background-color: rgba(35, 35, 35, 0.975);
   border: 1px solid rgb(45, 45, 45);
   border-radius: 100px;
   display: flex;
@@ -51,7 +51,7 @@
 
 .search-bar-wrapper .search-icon-wrapper {
   opacity: 0;
-  transition: opacity 0.15s;
+  transition: opacity 0.2s;
   pointer-events: none;
 }
 
@@ -67,6 +67,10 @@
 .search-bar-wrapper .search-icon {
   width: 27.5px;
   height: 27.5px;
+}
+
+.close-icon-wrapper {
+  margin-left: -.25rem;
 }
 
 .close-icon {
@@ -134,6 +138,27 @@
   .search-bar {
     font-size: 2.4rem;
     padding-block: 1.95rem;
+  }
+
+  .search-bar-wrapper {
+    padding-right: 1.25rem;
+  }
+
+  .search-bar-wrapper .hover-on-bg {
+    padding: 0;
+  }
+
+  .search-bar-wrapper .search-icon-wrapper {
+    margin-right: .55rem;
+  }
+
+  .close-icon-wrapper {
+    margin-left: 0;
+  }
+
+  .close-icon {
+    width: 31.25px;
+    height: 31.25px;
   }
 }
 

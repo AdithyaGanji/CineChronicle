@@ -51,7 +51,7 @@ export default function SearchButton() {
               type="text"
               placeholder="Search"
               value={searchInput}
-              onChange={(event) => setSearchInput(event.target.value)}
+              onChange={(event) => setSearchInput(event.target.value.trim())}
               autoFocus
               onKeyUp={(event) => handleKeyPress(event)}
               ref={inputRef}

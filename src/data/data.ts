@@ -121,13 +121,13 @@ export const newArrivals: Array<MovieObject> = [
     posterPath: "https://m.media-amazon.com/images/M/MV5BYzYzNDYxMTQtMTU4OS00MTdlLThhMTQtZjI4NGJmMTZmNmRiXkEyXkFqcGc@._V1_SX300.jpg"
   },
   {
-    id: 'tt31036941',
-    title: 'Jurassic World: Rebirth',
-    genre: 'Adventure',
+    id: 'tt15574124',
+    title: 'The Conjuring: Last Rites',
+    genre: 'Horror',
     releaseYear: 2025,
-    durationInMins: 133,
-    imdbRating: '5.8',
-    posterPath: "https://m.media-amazon.com/images/M/MV5BNjg2NTcwYWQtYzk4NS00MTJhLWEzZjItMzIxNjk3YzlkYzU0XkEyXkFqcGc@._V1_SX300.jpg"
+    durationInMins: 135,
+    imdbRating: '6.2',
+    posterPath: "https://m.media-amazon.com/images/M/MV5BM2VmMzRkYzgtMzg2ZC00OTFkLTkwMTYtNTMxNjM2YzI1MjgyXkEyXkFqcGc@._V1_SX300.jpg"
   }
 ].map((mediaObj) => new MovieObject(mediaObj));
 

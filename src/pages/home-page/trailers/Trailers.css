@@ -60,7 +60,7 @@
 
 @media (max-width: 1000px) {
   .main-trailer {
-    width: 90%;
+    width: 95.5%;
     height: auto;
     aspect-ratio: 16 / 9;
   }
@@ -76,8 +76,8 @@
 
 @media (max-width: 365px) {
   .other-trailers {
-    width: 90%;
+    width: 91.5%;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    gap: 1.05rem;
   }  
 }

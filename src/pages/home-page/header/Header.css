@@ -16,7 +16,7 @@
 }
 
 .header-content {
-  width: 35%;
+  width: 37.5%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -24,13 +24,13 @@
 }
 
 .hm-title {
-  font-size: 5.85rem;
-  letter-spacing: 0.05rem;
+  font-size: 5.5rem;
+  letter-spacing: 0.055rem;
 }
 
 .header-movie-attributes {
-  font-size: 1.5rem;
-  font-weight: 550;
+  font-size: 1.6rem;
+  font-weight: 500;
   display: flex;
   align-items: center;
   margin: .5rem 0 1rem;
@@ -44,7 +44,7 @@
 
 .header-movie-description {
   font-size: 1.65rem;
-  color: rgb(245, 245, 245);
+  color: #DDD;
 }
 
 .btn.header-explore-btn {
@@ -68,7 +68,7 @@
 
 @media (max-width: 800px) {
   .header-content {
-    width: 90%;
+    width: 87.5%;
     margin-inline: auto;
   }
 

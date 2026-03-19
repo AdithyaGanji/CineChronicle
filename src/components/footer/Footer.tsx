@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="divider"></div>
       <div className="footer-message">
-        Crafted by Adithya
+        © 2026 CineChronicle
       </div>
     </footer>
   )
