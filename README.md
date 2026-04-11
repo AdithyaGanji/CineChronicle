@@ -11,8 +11,8 @@ CineChronicle is a fully responsive web application that lets you discover vario
 
 ## Tech Stack
 
-- **Core**: HTML, TypeScript, React 
-- **Styling**: Vanilla CSS
+- **Core**: HTML5, TypeScript, React 
+- **Styling**: Vanilla CSS3
 - **Build Tool**: Vite
 
 ## Live Demo
